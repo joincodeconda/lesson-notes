@@ -4,15 +4,15 @@ using namespace std;
 
 /* UNIT TEST DECLARATIONS */
 
-void UnitTestPhoneBookConstructor();
+void unitTestPhoneBookConstructor();
 
-void UnitTestPhoneBookYear();
+void unitTestPhoneBookYear();
 
-void UnitTestPhoneBookAddContact();
+void unitTestPhoneBookAddContact();
 
-void UnitTestPhoneBookAddDuplicateContact();
+void unitTestPhoneBookAddDuplicateContact();
 
-void UnitTestPhoneBookGetContact();
+void unitTestPhoneBookGetContact();
 
 /* CLASS DECLARATION */
 

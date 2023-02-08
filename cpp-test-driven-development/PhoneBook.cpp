@@ -14,26 +14,26 @@
 
 /* UNIT TESTS */
 
-void UnitTestPhoneBookConstructor() {
+void unitTestPhoneBookConstructor() {
     string year = "2017";
     PhoneBook phoneBook(year);
     assert(typeid(phoneBook) == typeid(PhoneBook));
 }
 
-void UnitTestPhoneBookYear() {
+void unitTestPhoneBookYear() {
     string year = "2012";
     PhoneBook phoneBook(year);
     assert(phoneBook.year == year);
 }
 
-void UnitTestPhoneBookAddContact() {
+void unitTestPhoneBookAddContact() {
     string year = "1998", name = "Guy Fieri", number = "888-4-FLAVOR";
     PhoneBook phoneBook(year);
     bool result = phoneBook.addContact(name, number);
     assert(result == true);
 }
 
-void UnitTestPhoneBookAddDuplicateContact() {
+void unitTestPhoneBookAddDuplicateContact() {
     string year = "1978", name = "George Washington", number = "123-456-7890";
     PhoneBook phoneBook(year);
     bool result = phoneBook.addContact(name, number);
@@ -42,7 +42,7 @@ void UnitTestPhoneBookAddDuplicateContact() {
     assert(nextResult == false);
 }
 
-void UnitTestPhoneBookGetContact() {
+void unitTestPhoneBookGetContact() {
     string year = "2023", name = "Sam Smith", number = "456-7-UNHOLY";
     PhoneBook phoneBook(year);
     bool result = phoneBook.addContact(name, number);
@@ -68,15 +68,15 @@ string PhoneBook::getContactNumber(string name) {
 /* MAIN FUNCTION */
 
 int main() {
-    UnitTestPhoneBookConstructor();
+    unitTestPhoneBookConstructor();
 
-    UnitTestPhoneBookYear();
+    unitTestPhoneBookYear();
 
-    UnitTestPhoneBookAddContact();
+    unitTestPhoneBookAddContact();
 
-    UnitTestPhoneBookAddDuplicateContact();
+    unitTestPhoneBookAddDuplicateContact();
 
-    UnitTestPhoneBookGetContact();
+    unitTestPhoneBookGetContact();
 
     cout << "The program completed successfully" << endl;
 
